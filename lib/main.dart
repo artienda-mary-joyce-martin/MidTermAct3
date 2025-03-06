@@ -58,3 +58,10 @@ class _SettingsPageState extends State<SettingsPage> {
               padding: const EdgeInsets.all(8.0),
               child: CupertinoSearchTextField(),
             ),
+
+            CupertinoListSection.insetGrouped(
+              children: <Widget>[
+                CupertinoListTile(
+                  leading: CircleAvatar(
+                    child: Text('MJ'),
+                  ),
