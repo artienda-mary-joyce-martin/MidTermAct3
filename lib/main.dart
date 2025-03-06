@@ -91,3 +91,12 @@ class _SettingsPageState extends State<SettingsPage> {
                   leading: Icon(CupertinoIcons.wifi),
                   title: Text('Wi-Fi'),
                   trailing: CupertinoListTileChevron(),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      CupertinoPageRoute(
+                        builder: (context) => WifiSettings(),
+                      ),
+                    );
+                  },
+                ),
