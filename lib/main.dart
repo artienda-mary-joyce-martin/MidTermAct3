@@ -65,3 +65,5 @@ class _SettingsPageState extends State<SettingsPage> {
                   leading: CircleAvatar(
                     child: Text('MJ'),
                   ),
+                  title: Text('Artienda, Mary Joyce'), 
+                  subtitle: Text('Apple Account, iCloud, and more'),
