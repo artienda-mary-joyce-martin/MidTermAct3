@@ -38,3 +38,16 @@ class _SettingsPageState extends State<SettingsPage> {
       _wifiNetworks = ['Network 1', 'Network 2', 'Network 3']; // Replace with fetched networks
     });
   }
+
+  @override
+  Widget build(BuildContext context) {
+    return CupertinoPageScaffold(
+      navigationBar: CupertinoNavigationBar(
+        middle: Text('Settings'),
+        trailing: CupertinoButton(
+          padding: EdgeInsets.zero,
+          child: Text('Edit'),
+          onPressed: () {
+          },
+        ),
+      ),
