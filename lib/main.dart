@@ -67,3 +67,7 @@ class _SettingsPageState extends State<SettingsPage> {
                   ),
                   title: Text('Artienda, Mary Joyce'), 
                   subtitle: Text('Apple Account, iCloud, and more'),
+                  trailing: CupertinoListTileChevron(),
+                  onTap: () {
+                  },
+                ),
