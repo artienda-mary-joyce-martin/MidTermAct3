@@ -15,3 +15,8 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+class SettingsPage extends StatefulWidget {
+  @override
+  _SettingsPageState createState() => _SettingsPageState();
+}
