@@ -110,3 +110,10 @@ class _SettingsPageState extends State<SettingsPage> {
                       CupertinoListTileChevron(),
                     ],
                   ),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      CupertinoPageRoute(builder: (context) => BluetoothSettings()),
+                    );
+                  },
+                ),
