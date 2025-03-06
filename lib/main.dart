@@ -87,3 +87,7 @@ class _SettingsPageState extends State<SettingsPage> {
                   title: Text('Airplane Mode'),
                   trailing: CupertinoSwitch(value: false, onChanged: (value) {}),
                 ),
+                CupertinoListTile(
+                  leading: Icon(CupertinoIcons.wifi),
+                  title: Text('Wi-Fi'),
+                  trailing: CupertinoListTileChevron(),
