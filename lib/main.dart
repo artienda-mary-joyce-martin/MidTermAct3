@@ -79,3 +79,11 @@ class _SettingsPageState extends State<SettingsPage> {
                 ),
               ],
             ),
+
+            CupertinoListSection.insetGrouped(
+              children: <Widget>[
+                CupertinoListTile(
+                  leading: Icon(CupertinoIcons.airplane),
+                  title: Text('Airplane Mode'),
+                  trailing: CupertinoSwitch(value: false, onChanged: (value) {}),
+                ),
