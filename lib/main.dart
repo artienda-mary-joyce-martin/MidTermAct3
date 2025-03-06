@@ -51,3 +51,10 @@ class _SettingsPageState extends State<SettingsPage> {
           },
         ),
       ),
+      child: SafeArea(
+        child: ListView(
+          children: <Widget>[
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: CupertinoSearchTextField(),
+            ),
