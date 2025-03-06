@@ -100,3 +100,13 @@ class _SettingsPageState extends State<SettingsPage> {
                     );
                   },
                 ),
+                CupertinoListTile(
+                  leading: Icon(CupertinoIcons.bluetooth),
+                  title: Text('Bluetooth'),
+                  trailing: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: <Widget>[
+                      Text('Off'), 
+                      CupertinoListTileChevron(),
+                    ],
+                  ),
