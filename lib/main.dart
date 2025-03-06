@@ -20,3 +20,7 @@ class SettingsPage extends StatefulWidget {
   @override
   _SettingsPageState createState() => _SettingsPageState();
 }
+
+class _SettingsPageState extends State<SettingsPage> {
+  bool _isLoadingNetworks = false;
+  List<String> _wifiNetworks = [];
