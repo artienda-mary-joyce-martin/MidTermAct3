@@ -71,3 +71,11 @@ class _SettingsPageState extends State<SettingsPage> {
                   onTap: () {
                   },
                 ),
+                CupertinoListTile(
+                  title: Text('Apple Account Suggestions'),
+                  trailing: CupertinoListTileChevron(),
+                  onTap: () {
+                  },
+                ),
+              ],
+            ),
