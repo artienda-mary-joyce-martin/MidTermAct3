@@ -177,3 +177,7 @@ class _WifiSettingsState extends State<WifiSettings> {
       navigationBar: CupertinoNavigationBar(
         middle: Text('Wi-Fi'),
       ),
+      child: SingleChildScrollView(
+        child: SafeArea(
+          child: Padding(
+            padding: const EdgeInsets.all(16.0),
