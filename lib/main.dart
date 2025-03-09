@@ -170,3 +170,10 @@ class _WifiSettingsState extends State<WifiSettings> {
       _wifiNetworks = ['#GigaSmartWiFi', '_FREE Smart WiFi @HCC', 'HCC_CpELab'];
     });
   }
+
+  @override
+  Widget build(BuildContext context) {
+    return CupertinoPageScaffold(
+      navigationBar: CupertinoNavigationBar(
+        middle: Text('Wi-Fi'),
+      ),
