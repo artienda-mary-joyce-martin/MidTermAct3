@@ -200,3 +200,7 @@ class _WifiSettingsState extends State<WifiSettings> {
                         onPressed: () {},
                         child: Text('Learn more...'),
                       ),
+                      SizedBox(height: 20),
+                    ],
+                  ),
+                ),
