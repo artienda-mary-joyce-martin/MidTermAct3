@@ -117,3 +117,10 @@ class _SettingsPageState extends State<SettingsPage> {
                     );
                   },
                 ),
+                CupertinoListTile(
+                  leading: Icon(CupertinoIcons.device_phone_landscape),
+                  title: Text('Cellular'),
+                  trailing: CupertinoListTileChevron(),
+                  onTap: () {
+                  },
+                ),
