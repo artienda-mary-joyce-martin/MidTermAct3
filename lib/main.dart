@@ -251,3 +251,13 @@ class _WifiSettingsState extends State<WifiSettings> {
                       ),
                     ],
                   ),
+                SizedBox(height: 20),
+                Text('AirDrop, AirPlay, Notify When Left Behind, and improved location accuracy require Wi-Fi.'),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
