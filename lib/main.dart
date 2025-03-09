@@ -196,3 +196,7 @@ class _WifiSettingsState extends State<WifiSettings> {
                         'Connect to Wi-Fi, view available networks, and manage settings for joining networks and nearby hotspots.',
                         textAlign: TextAlign.center,
                       ),
+                      TextButton(
+                        onPressed: () {},
+                        child: Text('Learn more...'),
+                      ),
