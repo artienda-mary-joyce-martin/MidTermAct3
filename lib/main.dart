@@ -124,3 +124,10 @@ class _SettingsPageState extends State<SettingsPage> {
                   onTap: () {
                   },
                 ),
+                CupertinoListTile(
+                  leading: Icon(CupertinoIcons.personalhotspot),
+                  title: Text('Personal Hotspot'),
+                  trailing: CupertinoListTileChevron(),
+                  onTap: () {
+                  },
+                ),
