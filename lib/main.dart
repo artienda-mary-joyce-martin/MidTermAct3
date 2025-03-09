@@ -214,3 +214,10 @@ class _WifiSettingsState extends State<WifiSettings> {
                         setState(() {
                           _wifiEnabled = value;
                         });
+                        if (value) {
+                          await _fetchWifiNetworks();
+                        }
+                      },
+                    ),
+                  ],
+                ),
