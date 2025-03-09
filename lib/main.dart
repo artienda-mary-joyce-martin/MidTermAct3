@@ -181,3 +181,18 @@ class _WifiSettingsState extends State<WifiSettings> {
         child: SafeArea(
           child: Padding(
             padding: const EdgeInsets.all(16.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Center(
+                  child: Column(
+                    children: <Widget>[
+                      SizedBox(height: 20),
+                      Icon(CupertinoIcons.wifi, size: 60),
+                      SizedBox(height: 10),
+                      Text('Wi-Fi', style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
+                      SizedBox(height: 10),
+                      Text(
+                        'Connect to Wi-Fi, view available networks, and manage settings for joining networks and nearby hotspots.',
+                        textAlign: TextAlign.center,
+                      ),
