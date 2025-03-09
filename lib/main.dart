@@ -221,3 +221,17 @@ class _WifiSettingsState extends State<WifiSettings> {
                     ),
                   ],
                 ),
+                SizedBox(height: 20),
+                if (_wifiEnabled)
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        children: [
+                          Text('NETWORKS'),
+                          if (_isLoadingNetworks) Padding(
+                            padding: const EdgeInsets.only(left: 8.0),
+                            child: CupertinoActivityIndicator(),
+                          ),
+                        ],
+                      ),
