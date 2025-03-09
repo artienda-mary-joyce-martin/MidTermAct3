@@ -235,3 +235,19 @@ class _WifiSettingsState extends State<WifiSettings> {
                           ),
                         ],
                       ),
+                      Column(
+                        children: _wifiNetworks.map((network) {
+                          return CupertinoListTile(
+                            title: Text(network),
+                            trailing: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                SizedBox(width: 8),
+                                Icon(CupertinoIcons.info_circle),
+                              ],
+                            ),
+                          );
+                        }).toList(),
+                      ),
+                    ],
+                  ),
