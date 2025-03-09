@@ -204,3 +204,13 @@ class _WifiSettingsState extends State<WifiSettings> {
                     ],
                   ),
                 ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    Text('Wi-Fi'),
+                    CupertinoSwitch(
+                      value: _wifiEnabled,
+                      onChanged: (value) async {
+                        setState(() {
+                          _wifiEnabled = value;
+                        });
