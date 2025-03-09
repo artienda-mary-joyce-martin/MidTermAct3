@@ -131,3 +131,18 @@ class _SettingsPageState extends State<SettingsPage> {
                   onTap: () {
                   },
                 ),
+                CupertinoListTile(
+                  leading: Icon(CupertinoIcons.battery_full),
+                  title: Text('Battery'),
+                  trailing: CupertinoListTileChevron(),
+                  onTap: () {
+                  },
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
