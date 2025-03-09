@@ -164,3 +164,9 @@ class _WifiSettingsState extends State<WifiSettings> {
     });
 
     await Future.delayed(Duration(seconds: 5));
+
+    setState(() {
+      _isLoadingNetworks = false;
+      _wifiNetworks = ['#GigaSmartWiFi', '_FREE Smart WiFi @HCC', 'HCC_CpELab'];
+    });
+  }
