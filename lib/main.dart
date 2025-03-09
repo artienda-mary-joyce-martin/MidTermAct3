@@ -156,3 +156,9 @@ class _WifiSettingsState extends State<WifiSettings> {
   bool _wifiEnabled = false;
   bool _isLoadingNetworks = false;
   List<String> _wifiNetworks = [];
+
+  Future<void> _fetchWifiNetworks() async {
+    setState(() {
+      _isLoadingNetworks = true;
+      _wifiNetworks = [];
+    });
