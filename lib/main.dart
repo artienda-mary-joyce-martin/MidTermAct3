@@ -162,3 +162,5 @@ class _WifiSettingsState extends State<WifiSettings> {
       _isLoadingNetworks = true;
       _wifiNetworks = [];
     });
+
+    await Future.delayed(Duration(seconds: 5));
