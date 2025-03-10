@@ -279,3 +279,9 @@ class _BluetoothSettingsState extends State<BluetoothSettings> {
     });
 
     await Future.delayed(Duration(seconds: 5));
+
+    setState(() {
+      _isLoadingDevices = false;
+      _bluetoothDevices = ['Headphones', 'Speaker', 'Keyboard'];
+    });
+  }
