@@ -285,3 +285,10 @@ class _BluetoothSettingsState extends State<BluetoothSettings> {
       _bluetoothDevices = ['Headphones', 'Speaker', 'Keyboard'];
     });
   }
+
+  @override
+  Widget build(BuildContext context) {
+    return CupertinoPageScaffold(
+      navigationBar: CupertinoNavigationBar(
+        middle: Text('Bluetooth'),
+      ),
