@@ -316,3 +316,62 @@ class _BluetoothSettingsState extends State<BluetoothSettings> {
                 ],
               ),
             ),
+             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                
+                Text('Bluetooth'),
+                CupertinoSwitch(
+                  value: _bluetoothEnabled,
+                  onChanged: (value) async {
+                    setState(() {
+                      _bluetoothEnabled = value;
+                    });
+                    if (value) {
+                      await _fetchBluetoothDevices();
+                    }
+                  },
+                ),
+              ],
+            ),
+            SizedBox(height: 20),
+            if (_bluetoothEnabled)
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    children: [
+                      Text('MY DEVICES'),
+                      if (_isLoadingDevices) Padding(
+                        padding: const EdgeInsets.only(left: 8.0),
+                        child: CupertinoActivityIndicator(),
+                      ),
+                    ],
+                  ),
+                  Column(
+                    children: _bluetoothDevices.map((device) {
+                      return Material(
+                        child: ListTile(
+                          title: Text(device),
+                          trailing: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Icon(CupertinoIcons.bluetooth),
+                              SizedBox(width: 8),
+                              Icon(CupertinoIcons.info_circle),
+                            ],
+                          ),
+                        ),
+                      );
+                    }).toList(),
+                  ),
+                ],
+              ),
+            SizedBox(height: 20),
+            Text('AirDrop, Handoff, and other features require Bluetooth.'),
+          ],
+        ),
+      ),
+    );
+  }
+}
