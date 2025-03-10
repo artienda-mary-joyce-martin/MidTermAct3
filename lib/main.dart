@@ -271,3 +271,9 @@ class _BluetoothSettingsState extends State<BluetoothSettings> {
   bool _bluetoothEnabled = false;
   bool _isLoadingDevices = false;
   List<String> _bluetoothDevices = [];
+
+  Future<void> _fetchBluetoothDevices() async {
+    setState(() {
+      _isLoadingDevices = true;
+      _bluetoothDevices = [];
+    });
