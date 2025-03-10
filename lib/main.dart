@@ -292,3 +292,19 @@ class _BluetoothSettingsState extends State<BluetoothSettings> {
       navigationBar: CupertinoNavigationBar(
         middle: Text('Bluetooth'),
       ),
+      child: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Center(
+              child: Column(
+                children: <Widget>[
+                  Icon(CupertinoIcons.bluetooth, size: 60),
+                  SizedBox(height: 10),
+                  Text('Bluetooth', style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
+                  SizedBox(height: 10),
+                  Text(
+                    'Connect to Bluetooth devices, view available devices, and manage settings for pairing.',
+                    textAlign: TextAlign.center,
+                  ),
