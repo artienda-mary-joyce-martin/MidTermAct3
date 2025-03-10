@@ -277,3 +277,5 @@ class _BluetoothSettingsState extends State<BluetoothSettings> {
       _isLoadingDevices = true;
       _bluetoothDevices = [];
     });
+
+    await Future.delayed(Duration(seconds: 5));
