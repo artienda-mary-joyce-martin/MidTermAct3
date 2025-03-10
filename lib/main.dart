@@ -261,3 +261,8 @@ class _WifiSettingsState extends State<WifiSettings> {
     );
   }
 }
+
+class BluetoothSettings extends StatefulWidget {
+  @override
+  _BluetoothSettingsState createState() => _BluetoothSettingsState();
+}
