@@ -266,3 +266,8 @@ class BluetoothSettings extends StatefulWidget {
   @override
   _BluetoothSettingsState createState() => _BluetoothSettingsState();
 }
+
+class _BluetoothSettingsState extends State<BluetoothSettings> {
+  bool _bluetoothEnabled = false;
+  bool _isLoadingDevices = false;
+  List<String> _bluetoothDevices = [];
