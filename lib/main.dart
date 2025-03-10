@@ -308,3 +308,11 @@ class _BluetoothSettingsState extends State<BluetoothSettings> {
                     'Connect to Bluetooth devices, view available devices, and manage settings for pairing.',
                     textAlign: TextAlign.center,
                   ),
+                   TextButton(
+                    onPressed: () {},
+                    child: Text('Learn more...'),
+                  ),
+                  SizedBox(height: 20),
+                ],
+              ),
+            ),
